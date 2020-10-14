@@ -1,0 +1,27 @@
+<p id="p"></p>
+<p id="s"></p>
+<p id="d"></p>
+<p id="g"></p>
+<p id="r"></p>
+<p id="e"></p>
+<p id="gm"></p>
+<p id="y"></p>
+<script>
+let data="Mohamed,AliMohamed,EsmailAdel,AliAli";
+    document.getElementById("p").innerHTML="LastIndexOf:"+data.lastIndexOf("Mohamed");
+    document.getElementById("s").innerHTML="LastIndexOF WithStart Argument:"+data.lastIndexOf("Mohamed",10);
+    document.getElementById("d").innerHTML="<br>Search Like Index of But this work with ReqularExpression and doesn't take second argument :"+data.search("Mohamed");
+    document.getElementById("g").innerHTML="Slice:"+data.slice(0,7)+"   With Negative:"+data.slice(-15,-7);
+    
+    document.getElementById("r").innerHTML="Replace:"+data.replace("Mohamed","Replace");
+    document.getElementById("e").innerHTML="RegularExpression:"+data.replace(/mohamed/i,"Abotir");
+    document.getElementById("gm").innerHTML="Global Match With RegularExpression and replace:"+data.replace(/Ali/g,"Global");
+    var arr=data.split(",");
+    document.getElementById("y").innerHTML="Split:"+arr[1];
+    String.prototype.trim=function(){
+    
+        return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+    };
+    var s="   Moashad   ";
+    alert(s.trim());
+</script>

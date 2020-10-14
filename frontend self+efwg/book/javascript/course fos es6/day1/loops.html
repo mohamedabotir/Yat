@@ -1,0 +1,25 @@
+Open Console
+<script>
+    const obj={
+        name:"asdadasd",
+        Age:120
+    };
+    let {name,Age}=obj;
+    console.log(`Name:${name}, Age:${Age}`);
+//////regular//////
+    const data=[12,15,20,21,22,40];
+    for(let i=0;i<data.length;i++)
+       { console.log(data[i]);}
+    data[0]=Age;
+    data[1]=name;
+    console.log("--------------Of Loop");
+    for(const datas of data)
+        console.log(datas);
+        console.log("--------------in Loop");
+     for(const datas in data)
+        console.log(data[datas]);
+    ///////////////////////////////
+    let dd=["saturday","sunday","monday"];
+        for(const datas of dd)
+            console.log(datas.charAt(0).toUpperCase()+data.substr(1,datas.length));
+</script>

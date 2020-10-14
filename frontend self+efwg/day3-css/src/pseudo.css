@@ -1,0 +1,22 @@
+div::before{
+    content:  "LastModified:12-2-2015 12:06 PM";
+    color:darkgreen;
+}
+body{
+    background-color: aqua;
+}
+div::first-letter{
+    
+    color: azure;
+}
+div::first-line{
+    
+    color: red;
+}
+div::selection{
+    
+   color: darkgray; 
+}
+div:hover{
+    color:darkgreen;
+}

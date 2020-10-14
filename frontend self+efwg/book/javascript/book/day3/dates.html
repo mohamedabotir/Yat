@@ -1,0 +1,30 @@
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+<script>
+var d=new Date();
+document.getElementById("demo").innerHTML=d;  
+    var dd=new Date("7 oct,2014 12:5:00");
+    document.getElementById("demo1").innerHTML=dd.toUTCString();
+    var ddd=new Date(2018,11,12);
+    document.getElementById("demo3").innerHTML=ddd.toDateString();
+    document.getElementById("demo4").textContent=d.getDate()+ "\\"+d.getMonth()+"\\"+d.getFullYear();
+    var dddd=new Date("10-09-2020");
+        document.getElementById("demo5").textContent=dddd.toDateString();
+    var ddddd = new Date("2015/03/25");
+        document.getElementById("demo6").textContent=ddddd.toDateString();
+            document.getElementById("demo6").textContent=ddddd.toDateString();
+
+
+
+</script>

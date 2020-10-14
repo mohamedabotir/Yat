@@ -1,0 +1,35 @@
+body{
+    margin: 0px;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 700px;
+    height: 300px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.red{
+    width: 300px;
+    height: 100%;
+    background-color: red;
+}
+.green{
+    width: 600;
+    height: 100%;
+    background-color: green;
+}
+.blue{
+    width: 252;
+    height:100%;
+    background-color: blue;
+}
+.orange{
+    width:150px;
+    height: 100%;
+    background-color: orange;
+}

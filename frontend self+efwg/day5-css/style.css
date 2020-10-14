@@ -1,0 +1,104 @@
+.child{
+    border-width: 10px;
+    border-color: black;
+    border-style:solid;
+    padding: 5px;
+    margin: 10px;
+    background-color: beige;
+   height: 50%;/*100px*/
+    width: 40%;/*280px*/
+    box-sizing:content-box;
+    display: inline-block;
+    
+    
+}
+.child >input{
+    text-align: center;
+}
+.parent{
+    
+    height: 200px;
+    width:700px;
+    background-color: aqua;
+}
+.visable{
+    border-width: 10px;
+    border-color: aquamarine;
+    border-style: groove;
+    padding: 10px;
+    margin: 10px;
+    box-sizing: content-box;
+    display: block;
+}
+.visable >span{
+    
+    visibility: hidden;/*visibility hide elemnt but didn't use free space so block:non is better*/
+}
+.body{
+    border-width: 10px;
+    border-style: groove;
+    margin: 10px auto;
+    height: 20px;
+    width: 500px;
+   display: block;
+     background-color: rgb(70,80,20,1);
+    border-color: aqua red coral orchid;
+    border-radius: 10px 5px 7px 2px;
+    display: inline-block;
+}
+.body span::selection{
+    color: aqua;
+}
+a:hover{
+    color: brown;
+}
+.body1{
+    border-width: 10px;
+    border-style: groove;
+    margin: 10px auto;
+    height: 100px;
+    width: 500px;
+     background-color: rgb(70,80,20,1);
+    border-color: aqua red coral orchid;
+    border-radius: 10px;
+    display: inline-block;
+}
+.img{
+   
+    border: 300px solid;
+    border-image-source: url(src/1.jpg);
+    border-image-slice: 44% 25% 44% 25%;
+     border-radius: initial;   
+    border-image-repeat: round;
+    
+}
+.shadow{
+    width: 250px;
+    height: 300px;
+    box-sizing: content-box;
+    border: 1px solid green;
+    margin: 10px auto;
+    box-shadow: 5px 20px  15px 1px black;
+}
+.shadow [type="text"],[type="password"]{
+    width: 90%;
+    
+}
+.shadow [type="submit"]{
+    width: 55px;
+    height: 20px;
+    color: black;
+    border: none;
+    background-color:cornflowerblue;
+    border-radius: 20px;
+   
+}
+.shadow [type="submit"]:hover{
+    background-color: black;
+    color: aqua;
+}
+.shadow a{ 
+    font-size: 25px;
+    text-decoration: none;
+    
+}

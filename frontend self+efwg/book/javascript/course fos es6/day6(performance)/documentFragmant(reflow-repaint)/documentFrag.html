@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>createDocumentFragment</title>
+</head>
+<body>
+	<div id="comments">
+		<div class="comment"> </div>
+		<div class="comment"> </div>
+		<div class="comment"> </div>
+
+	</div>
+<script type="text/javascript">
+	const frag=document.createDocumentFragment();
+	for (let i = 0; i <10; i++) {
+const newElement=document.createElement("p");
+newElement.innerText=`Paragraph:${i+1}`;
+newElement.addEventListener("click",action);
+frag.appendChild(newElement);
+	}
+	
+	document.body.appendChild(frag);
+	 function action(evt) {
+	 	 alert(evt.target.innerText);
+	 }
+
+	 //case of reflow and repaint  case study(filtering comment)
+const main=document.getElementById("comments");
+main.children[0].innerText="This is a Good Topic";
+main.children[1].innerText="i was so excited but after i saw this iam so disappointed";
+main.children[2].innerText="What a shit! Explaination ";
+
+
+// to get good performance we will follow this strategy 1-hide all comments ,2-remove spame ,3-display filtared comments
+//hide step take 1 repaint
+main.style.display="none";
+//remove step
+for (var i = 0; i < main.childElementCount; i++) {
+	if(main.children[i].innerText.includes("shit"))
+		main.children[i].remove();
+	//show step it take 1 repaint and reflow
+	main.style.display="block";
+	//totaly it take 1 reflow and 2 repaint 
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.child{
+    border-width: 10px;
+    border-color: black;
+    border-style:solid;
+    padding: 5px;
+    margin: 10px;
+    background-color: beige;
+   height: 50%;/*100px*/
+    width: 40%;/*280px*/
+    box-sizing:content-box;
+    
+    
+    
+}
+.child >input{
+    text-align: center;
+}
+.parent{
+    
+    height: 200px;
+    width:700px;
+    background-color: aqua;
+}

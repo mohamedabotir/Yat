@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 3px solid black;
+    width: auto;
+    height: 320px;
+    box-sizing: border-box;
+    margin: 20px;
+  /*  display: list-item; if apply this will consider that border and his conenet is one list*/
+   
+}
+.div1{
+    
+    background-color: aqua;
+    height: 90px;
+    display: list-item;
+    list-style-position: inside;
+}
+.div2{
+    
+    background-color: orange;
+    height: 50px;
+    width: 70px;
+    display: list-item;
+}
+.div3{
+    
+    background-color: blue;
+    height: 50px;
+   
+    display: list-item;
+}
+.div4{
+    
+    background-color: fuchsia;
+    height: 124.006px;
+    width: 450px;
+    display: list-item;
+}

@@ -1,0 +1,32 @@
+<p id="demo"></p>
+<p class="max">MaxValue</p>
+<p id="ao"></p>
+<button onclick="sort()">Sort</button>
+<button onclick="randsort()">RandomSort</button>
+<script>
+var arr=[1,5,3,2,8,12,55,60,88];
+    var cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+document.getElementById("demo").innerHTML=(`Before Sort Data: ${arr}`);
+document.getElementsByClassName("max")[0].innerHTML="MaxValue:"+findMax(arr);
+    document.getElementById("ao").innerHTML="Sort Array OF Object:"+cars[1].year;
+    function sort(){
+        arr.sort(function(a,b){return a-b});
+        cars.sort(function(a,b){return a.year-b.year});
+        document.getElementById("ao").innerHTML="Sort Array OF Object:"+cars[1].year;
+
+        document.getElementById("demo").innerHTML=(`After Sort Data: ${arr}`);
+    }
+    function randsort(){
+        arr.sort(function(a,b){return 0.5-Math.random()});
+        document.getElementById("demo").innerHTML=(`After Sort Data: ${arr}`);
+    }
+    function findMax(ll){
+        return Math.max.apply(null,arr);
+    }
+    
+    
+</script>

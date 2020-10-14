@@ -1,0 +1,32 @@
+<p id="demo"></p>
+<script>
+var fruits,text;
+    fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Tomato");
+    text="<ul>";
+    fruits.forEach(display);
+    text+="</ul>";
+    document.getElementById("demo").innerHTML=text;
+    function display(value){
+        text+="<li>"+value+"</li>";
+    }
+    document.write(`<br> instanceof:  ${fruits instanceof Array}`);
+    document.write(`<br> Display All Array${fruits}`);
+    document.write(`<br> join: ${fruits.join("*")}`);
+    fruits.shift();
+    document.write(`<br> Shift This delete from first: ${fruits}`);
+    fruits.unshift("Banana");
+    document.write(`<br> unshift add element from first: ${fruits}`);
+    delete fruits[0];
+    document.write(`<br> Delete element from array :First Element ${fruits}`);
+    var s="asdas|asdada|oooo|9187212";
+    document.write(`<br>Split: ${s.split("|")}`);
+    fruits.unshift("Banana");
+    fruits.splice(2,2,"remove1","remove2");
+    document.write(`<br>Splice add Elements in spicific position and remove elements  ${fruits}`);
+    fruits.splice(0,1);
+    document.write(`<br> Delete element from array without leaving hole with splice :${fruits}`);
+
+
+
+</script>

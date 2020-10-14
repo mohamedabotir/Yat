@@ -1,0 +1,52 @@
+
+h1,caption{
+   color: chocolate ;
+    
+}
+.id{
+    background-color: blue;
+    
+}
+*{
+    background-color: aqua;
+    color: black;
+    border-color: beige;
+    
+}
+#fname{
+    border-color: black;
+}
+div + p{
+    color: blueviolet;
+}
+.div2 >p{
+    color:darkcyan;
+
+}
+.div3 ~ p{
+     color:crimson;
+    
+}
+[bgcolor="red"]{
+    color: fuchsia;
+}
+[class ^="i"]{
+    color: cadetblue;
+    
+}
+[id $="e"]{
+    color:darkslateblue;
+    
+}
+[class *="d"]{
+    
+    font-size: 50px;
+
+}
+[abc ~="test"]{
+    font-size: 80px;
+    
+}
+[aaa |="test-one"]{
+    font-size: 100px;
+}

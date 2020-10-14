@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <script>
+ 	const p1=performance.now();
+ 	const element=document.createElement("div");
+for (let i = 0; i <10; i++) {
+ 	let newElement=document.createElement("p");
+ 	newElement.innerText=`Paragraph:${i+1}`;
+ 	
+ 	element.appendChild(newElement);
+
+ }
+ element.addEventListener("click",a);
+ document.body.appendChild(element);
+ const p=performance.now();
+ console.log(p-p1+" MilliSeconds");
+ function  a(evt) {
+alert(evt.target.textContent);
+ } 
+ </script>
+ </body>
+ </html>

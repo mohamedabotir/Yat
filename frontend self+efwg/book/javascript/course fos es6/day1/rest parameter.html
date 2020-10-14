@@ -1,0 +1,21 @@
+openConsole
+<script>
+    //rest parameter for packging
+const data=[20.17,18.67,1.50, "cheese", "eggs", "milk", "bread"];
+    const [total,subtotal,tax,...items]=data;//spread operator
+    console.log(total,subtotal,tax,items);
+     choose(...items);
+    function choose(...d){
+        for(const i of d)
+            if(i=="eggs")
+           {     console.log("I will Eats egg :I prefere it");
+            console.log("Using arguments object:arguments[0]");
+            arg(i,"");
+        break;
+           }
+    }
+    function arg( a='Default:A',b='Default:B'){
+        console.log("FirstValue:"+arguments[0]+"   SecondValue:"+arguments[1]);
+    }
+   
+</script>

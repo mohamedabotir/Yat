@@ -1,0 +1,5 @@
+-Head(h1,..h6)
+-b,i
+-sub,sup
+-whitespace(white space collapsing)
+-br,hr

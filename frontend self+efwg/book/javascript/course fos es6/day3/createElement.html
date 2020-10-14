@@ -1,0 +1,19 @@
+<body>
+    <p id="s">sdfdsdsds</p>
+</body>
+<script>
+const element=document.createElement("p");
+const element1=document.createElement("p");
+    element1.textContent="Second inner Element Created!!";
+    element.textContent="First Element Created!";
+    const textNode=document.createTextNode("First Text Node Content");
+    const s=document.querySelector("#s");
+    const f=document.createElement("p");
+    f.textContent="Text Content";
+    s.appendChild(f);
+    document.body.appendChild(s);
+    element.appendChild(element1);
+    /*if we append the same element for other element pointer will move to next and first element will point to nothing*/
+    element.appendChild(textNode);
+    document.body.appendChild(element);
+</script>

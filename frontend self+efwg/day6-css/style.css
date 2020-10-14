@@ -1,0 +1,34 @@
+div{
+    width: 200px;
+    height: 70px;
+    display: block;
+    border: 2px solid black;
+    margin: 5px 0px;
+   
+    
+}
+.box1{
+    border-radius: 10px;
+    background-color: aqua;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    margin: 0;
+}
+.box2{
+    background-color: brown;
+    position: absolute;/*the same fixed but not float the same in resizing(response) */
+     bottom:   -300px;
+     right: 30px;
+}
+.box3{
+    background-color: cadetblue;
+    position: sticky;
+    top: 0px;/*like relative as be in it's  position but if scroll 50 px then item will move*/
+}
+.box4{
+    background-color: chocolate;
+     position: relative;
+    top: 60px;
+}
+}

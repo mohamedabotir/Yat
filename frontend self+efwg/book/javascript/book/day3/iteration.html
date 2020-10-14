@@ -1,0 +1,53 @@
+<button onclick="sort(data)">sort</button>
+<p id="demo"></p>
+<p id="multi">MultipleValues</p>
+<p id="filter"></p>
+<p id="Reduce"></p>
+<p id="every"></p>
+<p id="some"></p>
+<p id="findValue"></p>
+<p id="FindIndex"></p>
+<script>
+    var text="";
+var data=[1,2,5,3,6,7,8,10];
+    data.forEach(display);
+    document.getElementById("demo").innerHTML=`Before sort<br> ${text}`;
+    var m=data.map(mult);
+    var f=data.filter(filter);//filter data
+    m.splice(0,1);//first parameter for position and second for delete item better than dete no make ahole 
+   //delete m[0]; 
+    document.getElementById("multi").innerHTML=m+"  Length:"+m.length;
+    document.getElementById("filter").innerHTML="<br> Filtrate Data >5:"+f;
+   var mda=[1,2,3,4,5,6];
+    var red=mda.reduce(Reduce,100);//and it can has initial Value
+    document.getElementById("Reduce").innerHTML="Results After Reduce: "+red;
+    var r=data.every(check);
+    document.getElementById("every").innerHTML="<br>check by Every To Check in all data >=2:"+r;
+    document.getElementById("some").innerHTML="<br> Check by Some to check if one element at least ==1 :"+data.some(checkSome);
+    document.getElementById("findValue").innerHTML="<br> find Value"+data.find(filter);
+        document.getElementById("FindIndex").innerHTML="<br> find Value"+data.findIndex(filter);
+
+function display(value){
+     text=text+value+"<br>";   
+    }
+    function sort(arr){
+   text= arr.sort(function(a,b){return a-b});
+        document.getElementById("demo").innerHTML=`After sort ${text}`;
+    }
+    function mult(value,index,data)//it's take three parameter value and index and data and index ,data can be ommit
+    {
+        return value*2;
+    }
+    function filter(value){
+        return value>5;
+    }
+    function Reduce(total,value)//its ommitted now it can take tow other parameters (index ,data)
+    {
+        return arguments[0]+arguments[1];
+    }
+    function check(value){
+        return value>=2
+    }function checkSome(value){
+        return value==1;
+    }
+</script>
