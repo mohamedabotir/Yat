@@ -1,0 +1,24 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color:#2F4F4F; 
+}
+h1{
+	position: relative;
+	top: 20px;	
+}
+.article h2{
+	position: relative;
+	top: 5px;
+font-size: 30px;
+}
+#bar{
+	position: absolute;
+	top: 1px;
+
+}
+.item-bar{
+	font-size: 25px;
+ list-style: none;
+ display: inline-block;
+}
